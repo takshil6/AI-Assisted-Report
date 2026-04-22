@@ -1,0 +1,23 @@
+{
+  "before": {
+    "rows": 5000,
+    "unique_customers": 158,
+    "unique_regions": 34,
+    "unique_segments": 31,
+    "null_revenues": 185
+  },
+  "after": {
+    "unique_customers": 23,
+    "unique_regions": 6,
+    "unique_segments": 6,
+    "null_revenues": 185,
+    "unparseable_dates": 0
+  },
+  "reductions": {
+    "customers_pct": 85.4,
+    "regions_pct": 82.4,
+    "segments_pct": 80.6
+  },
+  "model": "llama-3.1-8b-instant",
+  "rows_processed": 5000
+}

@@ -11,7 +11,7 @@ In industrial B2B companies (like Kadant), transaction data is notoriously dirty
 ```
   ┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
   │  Raw Data    │───▶│ AI Cleaner   │───▶│  Analyzer    │───▶│  Reporter    │
-  │  (CSV/XLSX)  │     │ (OpenAI API) │     │ (80/20)      │     │ (XLSX+Charts)│
+  │  (CSV/XLSX)  │     │  (Groq API)  │     │ (80/20)      │     │ (XLSX+Charts)│
   └──────────────┘     └──────────────┘     └──────────────┘     └──────┬───────┘
                                                                           │
                               ┌───────────────────────────────────────────┤
@@ -25,7 +25,7 @@ In industrial B2B companies (like Kadant), transaction data is notoriously dirty
 ## Phase Plan
 
 - [x] **Phase 1** — Project skeleton + synthetic messy dataset
-- [ ] **Phase 2** — AI cleaning module (OpenAI API)
+- [x] **Phase 2** — AI cleaning module (Groq API, Llama 3.1 8B)
 - [ ] **Phase 3** — 80/20 analysis engine
 - [ ] **Phase 4** — Weekly report generator
 - [ ] **Phase 5** — SharePoint / local delivery
@@ -39,13 +39,16 @@ cd ai-data-quality-pipeline
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env             # add your OpenAI API key
+cp .env.example .env             # add your Groq API key
 
-# Generate the synthetic dirty dataset
+# Phase 1: Generate the synthetic dirty dataset
 python src/generate_dirty_data.py
 
-# Inspect what was generated
-python -c "import pandas as pd; print(pd.read_csv('data/raw_transactions.csv').head(20))"
+# Phase 2: Clean it using Groq
+python src/cleaner.py
+
+# Inspect the cleaning results
+python -c "import json; print(json.dumps(json.load(open('data/cleaning_report.json')), indent=2))"
 ```
 
 ## Project Structure
@@ -76,8 +79,15 @@ ai-data-quality-pipeline/
 |---|---|
 | Language | Python 3.11+ |
 | Data | pandas, openpyxl |
-| AI | OpenAI API (gpt-4o-mini) |
+| AI | Groq API (`llama-3.1-8b-instant`) via OpenAI-compatible SDK |
 | NL querying | LangChain + pandas agent |
 | Reporting | openpyxl with charts |
 | UI | Streamlit |
 | Delivery | Office365-REST-Python-Client |
+
+### Why Groq?
+Free tier (no credit card), OpenAI-compatible API (swap `base_url` only),
+and very fast inference on Llama 3.1 8B which is more than capable for
+structured cleaning tasks. Rate limits: 30 req/min, 14,400 req/day on
+the 8B model. Our batching strategy (~50 items per call) means the full
+dataset cleans in ~3 API calls.
