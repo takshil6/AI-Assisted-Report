@@ -1,0 +1,15 @@
+[
+  {
+    "report_path": "reports\\weekly_report_2024-12-31.xlsx",
+    "local": {
+      "organized_path": "reports\\weekly\\2024\\weekly_report_2024-12-31.xlsx",
+      "latest_path": "reports\\latest.xlsx",
+      "index_path": "reports\\index.html"
+    },
+    "sharepoint": {
+      "status": "skipped",
+      "reason": "SharePoint env vars not configured"
+    },
+    "delivered_at": "2026-04-22T12:43:44"
+  }
+]

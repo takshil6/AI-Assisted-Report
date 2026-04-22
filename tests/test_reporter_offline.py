@@ -101,7 +101,7 @@ def test_generates_six_sheets():
             "Executive Summary", "80-20 Customers", "Segments",
             "Regions", "Weekly Trend", "Pareto Curve",
         ], f"Got: {wb.sheetnames}"
-    print("[PASS] test_generates_six_sheets passed")
+    print("✓ test_generates_six_sheets passed")
 
 
 def test_vip_rows_highlighted():
@@ -130,7 +130,7 @@ def test_vip_rows_highlighted():
         non_vip_bold = ws.cell(6, 2).font.bold
         assert not non_vip_bold, "Non-VIP row should NOT be bold"
 
-    print("[PASS] test_vip_rows_highlighted passed")
+    print("✓ test_vip_rows_highlighted passed")
 
 
 def test_no_formula_errors():
@@ -154,7 +154,7 @@ def test_no_formula_errors():
         # If this loads without raising, the file is structurally valid
         wb = load_workbook(out)
         assert wb is not None
-    print("[PASS] test_no_formula_errors passed")
+    print("✓ test_no_formula_errors passed")
 
 
 def test_charts_embedded():
@@ -173,7 +173,7 @@ def test_charts_embedded():
         wb = load_workbook(out)
         total_charts = sum(len(wb[n]._charts) for n in wb.sheetnames)
         assert total_charts >= 4, f"Expected >=4 charts, got {total_charts}"
-    print("[PASS] test_charts_embedded passed")
+    print("✓ test_charts_embedded passed")
 
 
 if __name__ == "__main__":
