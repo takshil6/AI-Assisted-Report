@@ -1,0 +1,24 @@
+customer_name_clean,revenue,transactions,avg_order_value,rank,pct_of_total,cumulative_pct,is_pareto_80
+Global Pulp & Paper Inc,306400266.44,1920,159583.47,1,85.48,85.48,True
+Sequoia Wood Products,19818156.89,489,40527.93,2,5.53,91.0,False
+Midwest Steel Works,6406459.83,271,23640.07,3,1.79,92.79,False
+Pacific Recycling LLC,5976809.78,249,24003.25,4,1.67,94.46,False
+Continental Packaging Group,4406266.93,231,19074.75,5,1.23,95.69,False
+Acme Industrial Corp,2347041.1,165,14224.49,6,0.65,96.34,False
+Cascade Paper Products,1797506.51,151,11904.02,7,0.5,96.84,False
+Tidewater Chemical Co,1759992.71,148,11891.84,8,0.49,97.34,False
+Evergreen Forest Industries,1564779.18,134,11677.46,9,0.44,97.77,False
+BlueRidge Manufacturing,1334025.4,125,10672.2,10,0.37,98.14,False
+Pacific Recycling Llc,1048048.96,44,23819.29,11,0.29,98.44,False
+Ironworks Heavy Equipment,979330.45,101,9696.34,12,0.27,98.71,False
+Lakeside Pulp Mills,837720.32,97,8636.29,13,0.23,98.94,False
+Atlantic Chemical Partners,685636.97,92,7452.58,14,0.19,99.13,False
+Oakwood Materials Inc,658100.99,87,7564.38,15,0.18,99.32,False
+Northern Timber Co,492689.54,78,6316.53,16,0.14,99.46,False
+Redwood Fiber Solutions,429908.65,65,6613.98,17,0.12,99.58,False
+Prairie Grain Handlers,420779.96,69,6098.26,18,0.12,99.69,False
+Meridian Engineering Services,370349.65,67,5527.61,19,0.1,99.8,False
+Summit Mining Enterprises,293068.0,52,5635.92,20,0.08,99.88,False
+Heartland Processing Co,267862.07,59,4540.04,21,0.07,99.95,False
+Blueridge Manufacturing,123598.45,13,9507.57,22,0.03,99.99,False
+IronWorks Heavy Equipment,46744.06,6,7790.68,23,0.01,100.0,False

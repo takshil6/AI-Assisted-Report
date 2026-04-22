@@ -1,0 +1,317 @@
+{
+  "dataset_summary": {
+    "total_revenue": 358465142.84,
+    "total_transactions": 4713,
+    "date_range_start": "2024-01-01",
+    "date_range_end": "2024-12-31",
+    "unique_customers": 23,
+    "unique_segments": 6,
+    "unique_regions": 6
+  },
+  "pareto_summary": {
+    "total_customers": 23,
+    "pareto_customers": 1,
+    "pareto_customer_pct": 4.3,
+    "pareto_revenue_pct": 85.5,
+    "top_1_customer": "Global Pulp & Paper Inc",
+    "top_1_revenue_pct": 85.48
+  },
+  "weekly_summary": {
+    "weeks_covered": 53,
+    "avg_weekly_revenue": 6763493.26,
+    "best_week_revenue": 8842504.17,
+    "worst_week_revenue": 2354176.1,
+    "latest_week_revenue": 2354176.1,
+    "latest_wow_change": -65.34
+  },
+  "top_customers": [
+    {
+      "customer_name_clean": "Global Pulp & Paper Inc",
+      "revenue": 306400266.44,
+      "transactions": 1920,
+      "avg_order_value": 159583.47,
+      "rank": 1,
+      "pct_of_total": 85.48,
+      "cumulative_pct": 85.48,
+      "is_pareto_80": true
+    },
+    {
+      "customer_name_clean": "Sequoia Wood Products",
+      "revenue": 19818156.89,
+      "transactions": 489,
+      "avg_order_value": 40527.93,
+      "rank": 2,
+      "pct_of_total": 5.53,
+      "cumulative_pct": 91.0,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Midwest Steel Works",
+      "revenue": 6406459.83,
+      "transactions": 271,
+      "avg_order_value": 23640.07,
+      "rank": 3,
+      "pct_of_total": 1.79,
+      "cumulative_pct": 92.79,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Pacific Recycling LLC",
+      "revenue": 5976809.78,
+      "transactions": 249,
+      "avg_order_value": 24003.25,
+      "rank": 4,
+      "pct_of_total": 1.67,
+      "cumulative_pct": 94.46,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Continental Packaging Group",
+      "revenue": 4406266.93,
+      "transactions": 231,
+      "avg_order_value": 19074.75,
+      "rank": 5,
+      "pct_of_total": 1.23,
+      "cumulative_pct": 95.69,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Acme Industrial Corp",
+      "revenue": 2347041.1,
+      "transactions": 165,
+      "avg_order_value": 14224.49,
+      "rank": 6,
+      "pct_of_total": 0.65,
+      "cumulative_pct": 96.34,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Cascade Paper Products",
+      "revenue": 1797506.51,
+      "transactions": 151,
+      "avg_order_value": 11904.02,
+      "rank": 7,
+      "pct_of_total": 0.5,
+      "cumulative_pct": 96.84,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Tidewater Chemical Co",
+      "revenue": 1759992.71,
+      "transactions": 148,
+      "avg_order_value": 11891.84,
+      "rank": 8,
+      "pct_of_total": 0.49,
+      "cumulative_pct": 97.34,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Evergreen Forest Industries",
+      "revenue": 1564779.18,
+      "transactions": 134,
+      "avg_order_value": 11677.46,
+      "rank": 9,
+      "pct_of_total": 0.44,
+      "cumulative_pct": 97.77,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "BlueRidge Manufacturing",
+      "revenue": 1334025.4,
+      "transactions": 125,
+      "avg_order_value": 10672.2,
+      "rank": 10,
+      "pct_of_total": 0.37,
+      "cumulative_pct": 98.14,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Pacific Recycling Llc",
+      "revenue": 1048048.96,
+      "transactions": 44,
+      "avg_order_value": 23819.29,
+      "rank": 11,
+      "pct_of_total": 0.29,
+      "cumulative_pct": 98.44,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Ironworks Heavy Equipment",
+      "revenue": 979330.45,
+      "transactions": 101,
+      "avg_order_value": 9696.34,
+      "rank": 12,
+      "pct_of_total": 0.27,
+      "cumulative_pct": 98.71,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Lakeside Pulp Mills",
+      "revenue": 837720.32,
+      "transactions": 97,
+      "avg_order_value": 8636.29,
+      "rank": 13,
+      "pct_of_total": 0.23,
+      "cumulative_pct": 98.94,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Atlantic Chemical Partners",
+      "revenue": 685636.97,
+      "transactions": 92,
+      "avg_order_value": 7452.58,
+      "rank": 14,
+      "pct_of_total": 0.19,
+      "cumulative_pct": 99.13,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Oakwood Materials Inc",
+      "revenue": 658100.99,
+      "transactions": 87,
+      "avg_order_value": 7564.38,
+      "rank": 15,
+      "pct_of_total": 0.18,
+      "cumulative_pct": 99.32,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Northern Timber Co",
+      "revenue": 492689.54,
+      "transactions": 78,
+      "avg_order_value": 6316.53,
+      "rank": 16,
+      "pct_of_total": 0.14,
+      "cumulative_pct": 99.46,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Redwood Fiber Solutions",
+      "revenue": 429908.65,
+      "transactions": 65,
+      "avg_order_value": 6613.98,
+      "rank": 17,
+      "pct_of_total": 0.12,
+      "cumulative_pct": 99.58,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Prairie Grain Handlers",
+      "revenue": 420779.96,
+      "transactions": 69,
+      "avg_order_value": 6098.26,
+      "rank": 18,
+      "pct_of_total": 0.12,
+      "cumulative_pct": 99.69,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Meridian Engineering Services",
+      "revenue": 370349.65,
+      "transactions": 67,
+      "avg_order_value": 5527.61,
+      "rank": 19,
+      "pct_of_total": 0.1,
+      "cumulative_pct": 99.8,
+      "is_pareto_80": false
+    },
+    {
+      "customer_name_clean": "Summit Mining Enterprises",
+      "revenue": 293068.0,
+      "transactions": 52,
+      "avg_order_value": 5635.92,
+      "rank": 20,
+      "pct_of_total": 0.08,
+      "cumulative_pct": 99.88,
+      "is_pareto_80": false
+    }
+  ],
+  "segment_breakdown": [
+    {
+      "industry_segment_clean": "Pulp & Paper",
+      "revenue": 63338981.31,
+      "transactions": 797,
+      "unique_customers": 22,
+      "pct_of_total": 17.67
+    },
+    {
+      "industry_segment_clean": "Mining",
+      "revenue": 62507875.15,
+      "transactions": 831,
+      "unique_customers": 23,
+      "pct_of_total": 17.44
+    },
+    {
+      "industry_segment_clean": "Food & Beverage",
+      "revenue": 61512518.02,
+      "transactions": 757,
+      "unique_customers": 22,
+      "pct_of_total": 17.16
+    },
+    {
+      "industry_segment_clean": "Wood Products",
+      "revenue": 58609753.42,
+      "transactions": 836,
+      "unique_customers": 23,
+      "pct_of_total": 16.35
+    },
+    {
+      "industry_segment_clean": "Chemical Processing",
+      "revenue": 57193826.47,
+      "transactions": 781,
+      "unique_customers": 23,
+      "pct_of_total": 15.96
+    },
+    {
+      "industry_segment_clean": "Recycling",
+      "revenue": 55302188.47,
+      "transactions": 711,
+      "unique_customers": 21,
+      "pct_of_total": 15.43
+    }
+  ],
+  "region_breakdown": [
+    {
+      "region_clean": "Northeast",
+      "revenue": 63578195.87,
+      "transactions": 829,
+      "unique_customers": 23,
+      "pct_of_total": 17.74
+    },
+    {
+      "region_clean": "International",
+      "revenue": 62501567.27,
+      "transactions": 786,
+      "unique_customers": 22,
+      "pct_of_total": 17.44
+    },
+    {
+      "region_clean": "Southwest",
+      "revenue": 60880047.39,
+      "transactions": 807,
+      "unique_customers": 23,
+      "pct_of_total": 16.98
+    },
+    {
+      "region_clean": "Southeast",
+      "revenue": 60433070.59,
+      "transactions": 756,
+      "unique_customers": 23,
+      "pct_of_total": 16.86
+    },
+    {
+      "region_clean": "West",
+      "revenue": 55715306.04,
+      "transactions": 759,
+      "unique_customers": 22,
+      "pct_of_total": 15.54
+    },
+    {
+      "region_clean": "Midwest",
+      "revenue": 55356955.68,
+      "transactions": 776,
+      "unique_customers": 23,
+      "pct_of_total": 15.44
+    }
+  ]
+}

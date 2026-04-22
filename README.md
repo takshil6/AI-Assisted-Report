@@ -26,7 +26,7 @@ In industrial B2B companies (like Kadant), transaction data is notoriously dirty
 
 - [x] **Phase 1** — Project skeleton + synthetic messy dataset
 - [x] **Phase 2** — AI cleaning module (Groq API, Llama 3.1 8B)
-- [ ] **Phase 3** — 80/20 analysis engine
+- [x] **Phase 3** — 80/20 Pareto analysis engine
 - [ ] **Phase 4** — Weekly report generator
 - [ ] **Phase 5** — SharePoint / local delivery
 - [ ] **Phase 6** — Natural-language query interface (Streamlit)
