@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Env / secrets
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated reports (keep the folder via .gitkeep)
+reports/*.xlsx
+reports/*.pptx
+
+# Data cache (optional - you may want to commit the raw CSV so reviewers can run the pipeline)
+data/clean_transactions.csv
+data/.cache/

@@ -1,0 +1,23 @@
+# Core data
+pandas>=2.1.0
+numpy>=1.26.0
+openpyxl>=3.1.2
+
+# AI
+openai>=1.40.0
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-experimental>=0.0.60
+tabulate>=0.9.0
+
+# Env / config
+python-dotenv>=1.0.0
+
+# SharePoint delivery (Phase 5)
+Office365-REST-Python-Client>=2.5.0
+
+# UI (Phase 6)
+streamlit>=1.36.0
+
+# Charts
+matplotlib>=3.8.0
